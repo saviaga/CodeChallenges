@@ -17,16 +17,16 @@ The above arrows point to positions where the corresponding bits are different.
 
 
 def hammingDistance(x, y):
-            """
-            :type x: int
-            :type y: int
-            :rtype: int
-            """
-            return bin(x ^ y).count("1")
+    """
+    :type x: int
+    :type y: int
+    :rtype: int
+    """
+    return bin(x ^ y).count("1")
 
 
 if __name__=="__main__":
-    x=3
+    x=1
     y=4
     result=hammingDistance(x,y)
     print(result)

@@ -10,13 +10,13 @@ Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
 
 
 def arrayPairSum(nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+    """
+    :type nums: List[int]
+    :rtype: int
+    """
 
-        #sorted returns a new list, while sort() does the sorting in-place [::2]extracts the even indexes of the list
-        return  sum(sorted(nums)[::2])
+    #sorted returns a new list, while sort() does the sorting in-place [::2]extracts the even indexes of the list
+    return  sum(sorted(nums)[::2])
 
 
 

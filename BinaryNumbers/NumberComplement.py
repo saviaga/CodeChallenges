@@ -19,25 +19,25 @@ Explanation: The binary representation of 1 is 1 (no leading zero bits), and its
 
 
 def findComplement(num):
-        """
-        :type num: int
-        :rtype: int
-        """
-        i=0
-        binary_num = bin(num)[2:]
-        string=list(binary_num)
-        complement=""
+    """
+    :type num: int
+    :rtype: int
+    """
+    i=0
+    binary_num = bin(num)[2:]
+    string=list(binary_num)
+    complement=""
 
-        while i < len(string):
-            if string[i]=="0":
-                string[i]="1"
-            else:
-                string[i]="0"
-            i+=1
+    while i < len(string):
+        if string[i]=="0":
+            string[i]="1"
+        else:
+            string[i]="0"
+        i+=1
 
-        complement=''.join(string)
+    complement=''.join(string)
 
-        return int(complement,2)
+    return int(complement, 2)
 
 
 if __name__=="__main__":
