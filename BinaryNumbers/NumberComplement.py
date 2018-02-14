@@ -1,4 +1,5 @@
 """
+https://leetcode.com/problems/number-complement/description/
 Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
 
 Note:
@@ -16,8 +17,8 @@ Output: 0
 Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
        """
 
-class Solution(object):
-    def findComplement(self, num):
+
+def findComplement(num):
         """
         :type num: int
         :rtype: int
@@ -40,6 +41,6 @@ class Solution(object):
 
 
 if __name__=="__main__":
-    new_Complement=Solution()
-    result=new_Complement.findComplement(5)
+    num=5
+    result=findComplement(num)
     print(result)

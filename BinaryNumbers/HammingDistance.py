@@ -1,4 +1,5 @@
 """
+https://leetcode.com/problems/hamming-distance/
 The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 Given two integers x and y, calculate the Hamming distance.
 
@@ -14,8 +15,8 @@ Explanation:
 The above arrows point to positions where the corresponding bits are different.
  """
 
-class Solution:
-        def hammingDistance(self, x, y):
+
+def hammingDistance(x, y):
             """
             :type x: int
             :type y: int
@@ -25,8 +26,9 @@ class Solution:
 
 
 if __name__=="__main__":
-    distance = Solution()
-    result=distance.hammingDistance(3,4)
+    x=3
+    y=4
+    result=hammingDistance(x,y)
     print(result)
 
 
