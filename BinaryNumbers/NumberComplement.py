@@ -17,12 +17,12 @@ Output: 0
 Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
        """
 
-
 def findComplement(num):
     """
     :type num: int
     :rtype: int
     """
+
     i=0
     binary_num = bin(num)[2:]
     string=list(binary_num)

@@ -15,7 +15,6 @@ Explanation:
 The above arrows point to positions where the corresponding bits are different.
  """
 
-
 def hammingDistance(x, y):
     """
     :type x: int
@@ -23,7 +22,6 @@ def hammingDistance(x, y):
     :rtype: int
     """
     return bin(x ^ y).count("1")
-
 
 if __name__=="__main__":
     x=1

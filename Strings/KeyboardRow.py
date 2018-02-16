@@ -11,16 +11,17 @@ You may assume the input string will only contain letters of alphabet.
 
 """
 
-
 def findWords(words):
     """
     :type words: List[str]
     :rtype: List[str]
     """
+
     R1=set("QWERTYUIOP")
     R2=set("ASDFGHJKL")
     R3=set("ZXCVBNM")
     final_words=[]
+
     for elem in words:
         w=set(elem.upper())
         if w.issubset(R1) or w.issubset(R2) or w.issubset(R3):
