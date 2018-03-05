@@ -20,18 +20,10 @@ The boundaries of each input argument are 1 <= left <= right <= 10000
 """
 
 def testing_selfdividing(num):
-    selfdividing = False
     for e in str(num):
-        try:
-            if (num % int(e)) == 0:
-                selfdividing = True
-            else:
-                selfdividing =  False
-                break
-        except:
-            selfdividing =  False
-            break
-    return selfdividing
+            if int(e) == 0 or (num % int(e)) > 0:
+                return False
+    return True
 
 def selfDividingNumbers(left, right):
     """
@@ -40,11 +32,10 @@ def selfDividingNumbers(left, right):
         :rtype: List[int]
         """
     output = []
-    while left <= right:
+    for n in range(left, right + 1):
         #for those numbers with more than 2 digits we iterate over each digit
-        if testing_selfdividing(left):
-            output.append(left)
-        left += 1
+        if testing_selfdividing(n):
+            output.append(n)
 
     return output
 
